@@ -1,0 +1,128 @@
+.header {
+    height: 80px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    background-color: var(--background);
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.systemInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.systemIcon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 700;
+}
+
+.systemText {
+    display: flex;
+    flex-direction: column;
+}
+
+.systemName {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.systemSub {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.locationBadge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.statusBadge {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.statusDot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--primary);
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.weatherWidget {
+    background: var(--surface);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.weatherAlert {
+    color: var(--success);
+    font-weight: 500;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.iconButton:hover {
+    background: var(--surface-hover);
+    color: var(--text-primary);
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--surface);
+}

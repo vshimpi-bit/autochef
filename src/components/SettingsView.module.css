@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--text-secondary);
+}
+
+.settingsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 24px;
+}
+
+.section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.sectionHeader h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.sectionHeader svg {
+    color: var(--primary);
+}
+
+.settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.settingItem:last-child {
+    border-bottom: none;
+}
+
+.settingLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.settingTitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.settingDesc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.toggle {
+    width: 44px;
+    height: 22px;
+    background: var(--surface-hover);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 1px solid var(--border);
+}
+
+.toggleActive {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.toggleDot {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggleActive .toggleDot {
+    transform: translateX(22px);
+}
+
+.inputField {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    width: 200px;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.saveBtn {
+    background: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 12px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12px;
+}

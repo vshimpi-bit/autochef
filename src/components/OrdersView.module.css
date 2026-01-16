@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--text-secondary);
+}
+
+.orderList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.orderItem {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.orderItem:hover {
+    transform: translateX(4px);
+    border-color: var(--secondary);
+}
+
+.orderLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--surface-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.orderInfo h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.orderInfo p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.orderRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.time {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.statusBadge {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.statusPREPARING {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+
+.statusREADY {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.statusDELIVERED {
+    background: rgba(134, 134, 134, 0.1);
+    color: var(--secondary);
+    border: 1px solid var(--border);
+}

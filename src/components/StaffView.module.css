@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.headerLeft p {
+    color: var(--text-secondary);
+}
+
+.optimizeBtn {
+    background: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.optimizeBtn:hover {
+    opacity: 0.9;
+}
+
+.staffGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.staffCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.staffHeader {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--surface-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.staffName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.staffRole {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metricLabel {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.metricValue {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.statusSection {
+    margin-top: 4px;
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statusON-SHIFT {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.statusBREAK {
+    background: rgba(134, 134, 134, 0.1);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}

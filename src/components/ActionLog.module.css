@@ -1,0 +1,70 @@
+.actionLog {
+    width: 320px;
+    height: 100%;
+    border-left: 1px solid var(--border);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--background);
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.logList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+}
+
+.logItem {
+    display: flex;
+    gap: 12px;
+}
+
+.indicator {
+    width: 3px;
+    height: 20px;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+
+.indicator.success {
+    background-color: var(--primary);
+}
+
+.indicator.warning {
+    background-color: var(--warning);
+}
+
+.indicator.danger {
+    background-color: var(--danger);
+}
+
+.logContent {
+    flex: 1;
+}
+
+.logText {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.logTime {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

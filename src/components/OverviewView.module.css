@@ -1,0 +1,214 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+}
+
+.header {
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.metricCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.metricHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.metricTitle {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.metricChange {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.positive {
+    color: var(--success);
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.negative {
+    color: var(--success);
+    /* Usually distinct, but taking cues from image - waste down is good (green) */
+    background: rgba(16, 185, 129, 0.1);
+}
+
+/* Exception for Labor Cost or neutral. If cost down, good. */
+
+.metricValue {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.metricChart {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.chartBar {
+    flex: 1;
+    background: var(--primary);
+    opacity: 0.2;
+    border-radius: 2px;
+    transition: height 0.3s;
+}
+
+.chartBar:hover {
+    opacity: 0.8;
+}
+
+.metricFooter {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-left: 4px;
+    border-left: 3px solid var(--primary);
+    line-height: 1;
+}
+
+.agentsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.agentCardSmall {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.agentHeaderSmall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agentInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.agentIconBox {
+    width: 40px;
+    height: 40px;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.agentNameSmall {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.toggle {
+    width: 36px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggleDot {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.agentDescSmall {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.confidenceBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-top: auto;
+}
+
+.confidenceValue {
+    color: var(--primary);
+}
+
+.loadingLine {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loadingDash {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background: var(--primary);
+    left: 0;
+}

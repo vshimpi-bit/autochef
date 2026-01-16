@@ -1,0 +1,204 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.headerLeft p {
+    color: var(--text-secondary);
+}
+
+.headerActions {
+    display: flex;
+    gap: 12px;
+}
+
+.btnTimeline {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnBooking {
+    background: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mainLayout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.tableMapSection {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+}
+
+.sectionTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.tableGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.tableCard {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableName {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.capacity {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.bookingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timeInfo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.riskInfo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.riskLow {
+    color: var(--primary);
+}
+
+.riskMedium {
+    color: var(--warning);
+}
+
+.riskHigh {
+    color: var(--danger);
+}
+
+.emptyTable {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.sidebarArea {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.insightsCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.insightHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.insightText {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.btnReassign {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 10px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.metricsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.metricItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.metricLabel {
+    color: var(--text-secondary);
+}
+
+.metricVal {
+    color: var(--primary);
+    font-weight: 700;
+}

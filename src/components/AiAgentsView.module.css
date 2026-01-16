@@ -1,0 +1,237 @@
+.container {
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    height: 100%;
+}
+
+.mainArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    padding-bottom: 32px;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.title p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.systemNominal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    background: rgba(16, 185, 129, 0.1);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardTitle {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.cardIcon {
+    width: 48px;
+    height: 48px;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.cardName h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.cardName span {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.badge {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    min-height: 42px;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.metricLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.progressBar {
+    height: 4px;
+    background: #334155;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--primary);
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--surface-hover);
+    border-color: var(--text-secondary);
+}
+
+
+.logTitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logItem {
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+
+/* Timeline line */
+.logItem:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    /* center of dot */
+    width: 1px;
+    height: calc(100% + 4px);
+    background: var(--border);
+}
+
+.logDot {
+    width: 12px;
+    height: 12px;
+    background: var(--background);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.logDot.warning {
+    border-color: var(--warning);
+}
+
+.logDot.danger {
+    border-color: var(--danger);
+}
+
+.logContent h4 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.logContent span {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
